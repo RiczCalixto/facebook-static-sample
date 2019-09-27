@@ -12,23 +12,39 @@ const GlobalStyles = createGlobalStyle`
       height: 100%;
     }
 
-    body{
+    body {
       text-rendering: optimizeLegibility !important;
       -webkit-font-smoothing: antialiased !important;
       background: #e0e0e0;
       color: #3e3e3e;
       font-family: Arial, Helvetica, sans-serif;
     }
-    header{
+    header {
         background: #4a90e2;
-        nav{
+
+        nav {
           display: flex;
           justify-content: space-between;
           align-items: center;
           height: 64px;
           padding: 0 42px;
           color: #fff;
-          min-width: 960px;
+          min-width: 480px;
+          font-size: 24px;
+
+          img {
+            height: 24px;
+          }
+          
+          div {
+            display:flex;
+            align-items: center;
+            span {
+              font-size: 20px;
+              font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+              margin-right: 19px;
+            }
+          }
         }
       }
   }
